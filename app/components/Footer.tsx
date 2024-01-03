@@ -3,10 +3,10 @@ import Link from 'next/link'
 const Footer = () => {
 	return (
 		<footer>
-			<div className="flex justify-around">
+			<div className="flex justify-around flex-col sm:flex-row items-center gap-5">
 				<div className="font-bold">© 2023 Magic Riddle Technology AB.</div>
 				<Link
-					className="link link-primary"
+					className="link link-primary dark:text-white"
 					href={
 						'https://www.freeprivacypolicy.com/live/59cde2aa-c9d1-472b-a19a-5ec12c8efa5d'
 					}
@@ -14,7 +14,7 @@ const Footer = () => {
 					Privacy Policy
 				</Link>
 				<Link
-					className="link link-primary"
+					className="link link-primary dark:text-white"
 					href={
 						'https://docs.google.com/document/d/1lNkF5JPSzaKOxQj-n-Oi7dm7uHO_YeKtOY_FVXyPpdY/edit?usp=sharing'
 					}

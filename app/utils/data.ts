@@ -8,7 +8,7 @@ export const sectionData: SectionData[] = [
 		heading: `Easy Financial Reconciliation 🧙`,
 		content: `Automate Order to Cash and three-way matching to close your books faster and get
         valuable time back each week.`,
-		buttonText: `Early Access`,
+		buttonText: `Sign me Up!`,
 		imgSrc: image1,
 	},
 	{

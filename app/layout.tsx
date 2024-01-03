@@ -9,39 +9,14 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
 	title: 'Riddle',
 	description: 'Fast and simple financial operations built for the future of Commerce.',
-	icons: {
-		icon: [
-			{
-				rel: 'icon',
-				type: 'image/png',
-				url: '/logo.png',
-				media: '(prefers-color-scheme: white)',
-			},
-			{
-				rel: 'icon',
-				type: 'image/png',
-				url: '/logo_white.png',
-				media: '(prefers-color-scheme: dark)',
-			},
-
-			// {
-			// 	media: 'prefers-color-scheme: light',
-			// 	url: '/logo.png',
-			// 	href: '/logo.png',
-			// },
-			// {
-			// 	media: 'prefers-color-scheme: dark',
-			// 	url: '/logo_white.png',
-			// 	href: '/logo_white.png',
-			// },
-		],
-	},
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en">
-			<body className={inter.className}>
+		<html lang="en" className="!scroll-smooth">
+			<body
+				className={`${inter.className} bg-white dark:bg-gray-800 dark:text-white text-black`}
+			>
 				<ThemeContextProvider>
 					{children}
 					<ThemeSwitch />

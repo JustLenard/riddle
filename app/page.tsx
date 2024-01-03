@@ -1,13 +1,11 @@
-import Image from 'next/image'
-import image from '../public/image1.png'
+import Footer from './components/Footer'
+import Founders from './components/Founders'
+import GetInTouch from './components/GetInTouch'
 import AppHeader from './components/Header'
+import JoinUs from './components/JoinUs'
 import Navbar from './components/Navbar'
 import Section from './components/Section'
 import { sectionData } from './utils/data'
-import Founders from './components/Founders'
-import GetInTouch from './components/GetInTouch'
-import JoinUs from './components/JoinUs'
-import Footer from './components/Footer'
 
 const Home = () => {
 	return (

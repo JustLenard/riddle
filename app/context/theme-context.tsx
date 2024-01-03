@@ -32,6 +32,7 @@ export default function ThemeContextProvider({ children }: ThemeContextProviderP
 
 	useEffect(() => {
 		const localTheme = window.localStorage.getItem('theme') as Theme | null
+		console.log('This is localTheme', localTheme)
 
 		if (localTheme) {
 			setTheme(localTheme)
@@ -40,6 +41,7 @@ export default function ThemeContextProvider({ children }: ThemeContextProviderP
 				document.documentElement.classList.add('dark')
 			}
 		} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			console.log('This is setting theme to dark')
 			setTheme('dark')
 			document.documentElement.classList.add('dark')
 		}

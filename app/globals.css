@@ -14,6 +14,10 @@ html.dark {
 	@apply btn btn-neutral btn-sm;
 }
 
-.secondaryText {
-	@apply text-2xl text-gray-400;
+.secondary-text {
+	@apply sm:text-2xl text-xl text-gray-500;
+}
+
+.heading-text {
+	@apply sm:text-4xl text-2xl font-bold;
 }
